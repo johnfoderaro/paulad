@@ -1,11 +1,7 @@
 <header>
   <nav class="container">
     <div class="navbar">
-      <p>
-        <span class="gradient">paula</span>
-        <br>
-        <span class="light">d'ambrosa</span>
-      </p>
+      <img src="/img/paula-logo.svg"/>
       <ul>
         <li>HOME</li>
         <li>ABOUT</li>
