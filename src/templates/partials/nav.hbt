@@ -1,0 +1,18 @@
+<header>
+  <nav class="container">
+    <div class="navbar">
+      <p>
+        <span class="gradient">paula</span>
+        <br>
+        <span class="light">d'ambrosa</span>
+      </p>
+      <ul>
+        <li>HOME</li>
+        <li>ABOUT</li>
+        <li>PORTFOLIO</li>
+        <li>RESUME</li>
+        <li>CONTACT</li>
+      </ul>
+    </nav>
+  </div>
+</header>

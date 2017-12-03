@@ -1,0 +1,43 @@
+{
+  "name": "paulad",
+  "version": "1.0.0",
+  "description": "Paula D&#39;Ambrosa Portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp development --gulpfile ./lib/gulpfile.js --cwd ./ ",
+    "test": "mocha"
+  },
+  "author": "Paula D&#39;Ambrosa",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.25.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browserify": "^14.5.0",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-util": "^3.0.8",
+    "handlebars": "^4.0.11",
+    "metalsmith": "^2.3.0",
+    "metalsmith-ignore": "^0.1.2",
+    "metalsmith-layouts": "^1.8.1",
+    "metalsmith-mapsite": "^1.0.4",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-metadata": "0.0.4",
+    "metalsmith-move-up": "^1.0.0",
+    "metalsmith-sitemap": "^1.2.0",
+    "uglifyify": "^4.0.5",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "eslint": "^4.12.1",
+    "eslint-config-airbnb-base": "^11.3.2",
+    "eslint-plugin-import": "^2.7.0",
+    "mocha": "^3.5.3"
+  }
+}

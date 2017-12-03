@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="112px" height="67px" viewBox="0 0 112 67" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>paula-logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="70.9960938%" cy="9.21164773%" fx="70.9960938%" fy="9.21164773%" r="122.567668%" gradientTransform="translate(0.709961,0.092116),scale(0.474138,1.000000),rotate(132.048499),translate(-0.709961,-0.092116)" id="radialGradient-1">
+            <stop stop-color="#CC6175" offset="0%"></stop>
+            <stop stop-color="#72446F" offset="50.3149463%"></stop>
+            <stop stop-color="#65ADD9" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-69.000000, -26.000000)">
+            <g id="paula-logo" transform="translate(67.000000, 24.000000)">
+                <text id="paula" fill="url(#radialGradient-1)" font-family="Josefin Sans" font-size="46.1361015" font-weight="bold" line-spacing="55" letter-spacing="1.59169544">
+                    <tspan x="0" y="44">paul</tspan>
+                    <tspan x="90.7497114" y="44" letter-spacing="-0.968304561">a</tspan>
+                </text>
+                <text id="d’ambrosa" font-family="Josefin Sans" font-size="29.3593373" font-weight="300" letter-spacing="-0.555231065" fill="#687C99">
+                    <tspan x="1.66357935" y="67.7380378">d</tspan>
+                    <tspan x="16.2577663" y="67.7380378" letter-spacing="-2.93593359">’</tspan>
+                    <tspan x="18.3129201" y="67.7380378" letter-spacing="-0.149792625">amb</tspan>
+                    <tspan x="69.8002099" y="67.7380378" letter-spacing="-0.163773274">r</tspan>
+                    <tspan x="76.976271" y="67.7380378" letter-spacing="-0.149792625">osa</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

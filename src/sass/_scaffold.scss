@@ -1,0 +1,84 @@
+.container {
+  padding: .5rem calc(50% - 600px);
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.gradient {
+  font-size: 2em;
+  background: radial-gradient($seaBlue, $purple);
+}
+
+.navbar {
+  height: 6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+  }
+  li {
+    display: inline-block;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+}
+
+.headline {
+  h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.5em;
+    font-weight: 300;
+    text-align: center;
+  }
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.portfolio {
+  background: $snow;
+  h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    text-align: center;    
+  }
+  h3 {
+    font-family: 'Lora', serif;
+    text-align: center;    
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  height: 22rem;
+  width: 22rem;
+  margin: 1rem;
+  background: $lightBlue;
+  display: flex;
+  flex-direction: column-reverse;
+  transition: background-color 2s linear;
+}
+
+.description {
+  h4 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: $snow;
+  }
+  P {
+    margin-top: 0.5em;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  padding: 1rem;
+}
