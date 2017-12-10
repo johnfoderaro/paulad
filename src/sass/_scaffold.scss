@@ -1,32 +1,48 @@
 .container {
-  padding: .5rem calc(50% - 600px);
+  padding: 1.25rem calc(50% - 500px);
   margin-right: 1rem;
   margin-left: 1rem;
 }
 
-.gradient {
-  font-size: 2em;
-  background: radial-gradient($seaBlue, $purple);
-}
-
 .navbar {
-  height: 6rem;
+  // min-height: 5srem;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;  
+  @media(min-width: $large-width) {
+    flex-direction: row;    
+    justify-content: space-between;    
+  }
 
   ul {
     display: flex;
     align-items: center;
     list-style-type: none;
+    justify-content: center;
+    padding-top: 2rem;
+    @media(min-width: $large-width) {
+      justify-content: space-between;    
+      padding-top: 0;      
+    }
   }
   li {
     display: inline-block;
     margin-right: 0.5rem;
     margin-left: 0.5rem;
+    &:first-child {
+      margin-right: 0.5rem;
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+      margin-left: 0.5rem;
+    }
     font-family: 'Josefin Sans', sans-serif;
   }
 }
+
+
+
 
 .headline {
   h1 {
@@ -35,50 +51,151 @@
     font-weight: 300;
     text-align: center;
   }
-  margin-top: 10rem;
-  margin-bottom: 10rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  @media(min-width: $large-width) {
+    margin-top: 6rem;
+    margin-bottom: 6rem;   
+  }
 }
 
-.portfolio {
-  background: $snow;
+.hero {
+  @media(min-width: $large-width) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  text-align: center;
+
+  hr {
+    border: 0; // reset
+    // border-bottom: 0.25px solid $link-1;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 2.5em;
+    @media(min-width: $large-width) {
+      font-size: 3.25em;
+    }
+  }
+
   h2 {
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 300;
-    text-align: center;    
-  }
-  h3 {
-    font-family: 'Lora', serif;
-    text-align: center;    
+    margin: 0;
+    font-size: 1.5em;
+    // font-family: $alt-font-family;
+    line-height: 1.5;
+    @media(min-width: $large-width) {
+      font-size: 1.65em;
+    }
   }
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+
 
 .project {
-  height: 22rem;
-  width: 22rem;
-  margin: 1rem;
-  background: $lightBlue;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  &:first-child {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  &:last-child {
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
   display: flex;
-  flex-direction: column-reverse;
-  transition: background-color 2s linear;
+  flex-direction: column;
+  @media(min-width: $large-width) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    flex-direction: row;        
+  }
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+
+  @for $i from 1 through length($background-colors) {
+    &:nth-child(#{length($background-colors)}n+#{$i}) {
+      background: nth($background-colors, $i)
+    }
+  }
+  
+  .thumbnail {
+    padding: 1rem;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    @media(min-width: $large-width) {
+      padding-right: 2rem;
+      padding-left: 2rem;
+    }
+    @media(max-width: $small-width) {
+
+    }
+  }
+
+  .description {
+    padding: 1rem;    
+    @media(min-width: $large-width) {
+      padding-right: 2rem;
+      padding-left: 2rem;
+    }
+    h4 {
+      font-family: 'Josefin Sans', sans-serif;
+      color: $snow;
+      font-size: 1.75em;
+    }
+    p {
+      margin-top: 0.5em;
+      font-size: 1.25em;
+      color: $snow;      
+    }
+  }
+
+  &:nth-child(even) {
+    .description {
+      @media(min-width: $large-width) {
+        flex-grow: 1;        
+        order: 1;
+        text-align: left;
+      }
+    }
+    .thumbnail {
+      @media(min-width: $large-width) {
+        flex-grow: 2;
+        order: 2;
+        text-align: right;
+      }
+    }
+  }
+
+  &:nth-child(odd) {
+    .description {
+      @media(min-width: $large-width) {
+        flex-grow: 1;
+        order: 2;
+        text-align: right;
+      }
+    }
+
+    .thumbnail {
+      @media(min-width: $large-width) {
+        flex-grow: 2;
+        order: 1;
+        text-align: left;
+      }
+    }
+  }
 }
 
-.description {
-  h4 {
-    font-family: 'Josefin Sans', sans-serif;
-    color: $snow;
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  svg {
+    flex-basis: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
-  P {
-    margin-top: 0.5em;
-  }
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  padding: 1rem;
 }

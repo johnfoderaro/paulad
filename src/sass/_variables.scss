@@ -1,3 +1,4 @@
+// Colors
 $snow: #f0f2f7;
 $black: #292d3a;
 $grey: #687c99;
@@ -5,3 +6,10 @@ $pink: #cc6175;
 $purple: #72446f;
 $seaBlue: #2274a5;
 $lightBlue: #65add9;
+
+// Project colors
+$background-colors:  $pink $seaBlue $purple;
+
+// Media query widths
+$large-width: 768px;
+$small-width: 767px;

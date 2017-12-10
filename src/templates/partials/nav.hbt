@@ -1,14 +1,10 @@
 <header>
-  <nav class="container">
-    <div class="navbar">
-      <img src="/img/paula-logo.svg"/>
-      <ul>
-        <li>HOME</li>
-        <li>ABOUT</li>
-        <li>PORTFOLIO</li>
-        <li>RESUME</li>
-        <li>CONTACT</li>
-      </ul>
-    </nav>
-  </div>
+  <div class="navbar">
+    <img src="/img/paula-logo.svg"/>
+    <ul>
+      <li>WORK</li>
+      <li>ABOUT</li>
+      <li>CONTACT</li>
+    </ul>
+  </nav>
 </header>

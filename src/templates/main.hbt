@@ -1,18 +1,12 @@
 <!doctype html>
 <html lang="en">
-
-{{> head }}
-
-<body>
-
-    {{> nav }}
-
-    {{{ contents }}}
-
-    {{> footer }}
-
+  {{> head }}
+  <body>
+    <div class="container">
+      {{> nav }}
+      {{{ contents }}}
+      {{> footer }}
+    </div>
     {{> scripts }}
-
-</body>
-
+  </body>
 </html>
